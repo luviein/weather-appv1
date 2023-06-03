@@ -3,7 +3,7 @@
 
 ### Landing Page
 
-![Landing Page](src\main\resources\static\images\weatherAPIlandingpage.png)
+![Image](src\main\resources\static\images\weatherAPIlandingpage.png)
 
 
 
@@ -12,4 +12,4 @@
 
 ### Result Page
 
-![Result Page](src\main\resources\static\images\weatherAPIresult.png)
+![Image](src\main\resources\static\images\weatherAPIresult.png)
