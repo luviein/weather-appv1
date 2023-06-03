@@ -54,7 +54,7 @@ public class Weather implements Serializable {
 
 
     // Converts json string to Weather object
-    private static Weather createJSON(String json) throws IOException {
+    public static Weather createJSON(String json) throws IOException {
         var w = new Weather();
         try (InputStream is = new ByteArrayInputStream(json.getBytes())) {
             // create a json reader to read bytes from json string
