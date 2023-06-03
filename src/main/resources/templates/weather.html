@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        th,td{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        *{
+            text-align: center;
+        }
+        .table{
+            padding-left: 35%;
+        }
+    </style>
+</head>
+<body data-th-object="${weather}">
+    <img data-th-src="*{condition.get(0).icon}"/>
+    <br>
+    <h1>Weather for <label th:text="${param.city}"></label>: </h1>
+    <br>
+    Condition:
+    <p data-th-text="*{condition.get(0).description}"></p>
+    <br>
+    <div class="table">
+        <table>
+            <colgroup span="4"></colgroup>
+            <tr>
+                <th>Temperature</th>
+                <th>Feels Like</th>
+                <th>Minimum Temperature</th>
+                <th>Maximum Temperature</th>
+            </tr>
+            <tr>
+                <td><p data-th-text="*{temp}"></p></td>
+                <td><p data-th-text="*{tempFeelsLike}"></p></td>
+                <td><p data-th-text="*{tempMin}"></p></td>
+                <td><p data-th-text="*{tempMax}"></p></td>
+            </tr>
+        </table>
+
+    </div>
+    <br>
+    Date:
+    <p data-th-text="*{#dates.format(date * 1000, 'dd-MM-yyy HH:mm:ss')}"></p>
+    <br>
+    Sunrise:
+    <p data-th-text="*{#dates.format(sunRise * 1000, 'dd-MM-yyy HH:mm:ss')}"></p>
+    <br>
+    Sunset:
+    <p data-th-text="*{#dates.format(sunSet * 1000, 'dd-MM-yyy HH:mm:ss')}"></p>
+    <br>
+
+    <a href="/">Back to Index</a>
+    
+</body>
+</html>

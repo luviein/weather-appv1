@@ -51,6 +51,12 @@ public class Weather implements Serializable {
     public Long getSunSet() {return sunSet;}
 
     public void setSunSet(Long sunSet) {this.sunSet = sunSet;}
+    
+    
+    public List<Condition> getCondition() {return condition;}
+
+    public void setCondition(List<Condition> condition) {this.condition = condition;}
+
 
 
     // Converts json string to Weather object
