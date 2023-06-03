@@ -3,7 +3,7 @@
 
 ### Landing Page
 
-![Image]("C:\Users\tanye\OneDrive\Pictures\ssf\weatherAPIlandingpage.png")
+![alt text]("C:\Users\tanye\OneDrive\Pictures\ssf\weatherAPIlandingpage.png "Landing Page ")
 
 
 
@@ -12,4 +12,4 @@
 
 ### Result Page
 
-![Image]("C:\Users\tanye\OneDrive\Pictures\ssf\weatherAPIresult.png")
+![alt text]("C:\Users\tanye\OneDrive\Pictures\ssf\weatherAPIresult.png "Results")
